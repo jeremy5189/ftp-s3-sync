@@ -1,3 +1,4 @@
 #!/bin/bash
-source ../.env
-lftp -u "$USER,$PASS" -e "cls -1 $REMOTE_DIR; exit" $HOST
+source ./.env
+
+/usr/bin/lftp -u "$USER,$PASS" -e "cls -1 $REMOTE_DIR; exit" $HOST

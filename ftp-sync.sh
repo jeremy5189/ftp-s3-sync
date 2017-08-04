@@ -1,2 +1,5 @@
 #!/bin/bash
-lftp -u "$USER,$PASS" -e "mirror --parallel=3 --verbose --only-newer $REMOTE_DIR $LOCAL_DIR; exit" $HOST 
+source ./.env
+
+echo "Syning WAV with $REMOTE_DIR/$1..."
+/usr/bin/lftp -u "$USER,$PASS" -e "mirror --parallel=3 --verbose --only-newer $REMOTE_DIR/$1 $LOCAL_DIR/$1; exit" $HOST 
