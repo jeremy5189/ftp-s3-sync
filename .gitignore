@@ -1,6 +1,6 @@
 .env
 wav/
-wav_bak/
+*_bak/
 mp3/
-mp3_bak/
 .vscode/
+*.err
