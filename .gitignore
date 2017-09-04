@@ -1,4 +1,6 @@
 .env
 wav/
+wav_bak/
 mp3/
+mp3_bak/
 .vscode/
